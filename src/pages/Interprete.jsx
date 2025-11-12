@@ -1,4 +1,4 @@
-import peliculas from "../data/peliculas"
+import peliculas from "../data/peliculas.js"
 import Card from "../features/Card"
 
 function Interprete() {

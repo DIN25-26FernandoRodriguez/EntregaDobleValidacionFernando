@@ -1,8 +1,5 @@
 import Contenedor from "./features/Contenedor.jsx"
-import peliculas from "./data/peliculas.js"
-import Card from "./features/Card.jsx"
 import Interprete from "./pages/Interprete.jsx"
-import Pelicula from "./pages/Peliculas.jsx"
 
 function App() {
   return (
