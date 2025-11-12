@@ -1,27 +1,27 @@
-import Contenedor from './Contenedor'
-import Interprete from './Interprete'
-import peliculas from './data/peliculas.js'
+import Contenedor from "./components/Contenedor.jsx"
+import peliculas from "./data/peliculas.js"
+import Card from "./components/Card.jsx"
 
 function App() {
-
   return (
     <>
-      <h1 className="contenedor__h1 items-center text-center">Mis Intérpretes</h1>  
-      <p className="[font-family:'Helvetica-Bold',Helvetica] font-bold text-color-primary text-2xl tracking-[0] leading-[normal] whitespace-nowrap items-center text-center pt-2">Lista de interpretes disponibles:</p>
-<Contenedor>
-  <div className="flex justify-center items-center pt-6">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-      
-      {peliculas.map((pelicula) =>
-        pelicula.actores.map((actor, index) => (
-          <Interprete key={actor.nombre} nombre={actor.nombre} foto={actor.imagen}>
-            {actor.biografia}
-          </Interprete>
-        ))
-      )} 
-    </div>
-  </div>
-</Contenedor>
+      <h1 className="contenedor__h1">Mis Intérpretes</h1>
+      <h2 className="titulo2">Listado de intérpretes disponibles:</h2>
+      <Contenedor>
+        <div className="flex justify-center items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            {peliculas.map((pelicula) => 
+              pelicula.actores.map((actor, index) => 
+                <Card
+                  key={index}
+                  nombre={actor.nombre}
+                  foto={actor.imagen} >
+                  {actor.biografia}
+                </Card>
+              ))}
+          </div>
+        </div>
+      </Contenedor>
     </>
   )
 }

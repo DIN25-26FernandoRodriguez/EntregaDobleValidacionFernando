@@ -10,6 +10,7 @@
   letter-spacing: var(--heading-h1-letter-spacing);
   line-height: var(--heading-h1-line-height);
   color: var(--color-primary);
+  text-align: center;
 }
 
 .interpretes{
@@ -17,6 +18,12 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 5rem;
   padding: 2rem;
+  text-align: center;
+}
+.titulo2{
+
+text-align: center;
+
 }
 
 body{
