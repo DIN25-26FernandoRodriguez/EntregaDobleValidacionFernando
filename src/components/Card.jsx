@@ -1,9 +1,8 @@
-import Interprete from "../Interprete";
+import Interprete from "../pages/Interprete";
 
 
 function Card(props) {
       const { foto, nombre } = props;
-
 
   return (
     <article
