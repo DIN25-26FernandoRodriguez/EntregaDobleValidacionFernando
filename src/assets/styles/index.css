@@ -1,10 +1,9 @@
-
-@import 'tailwindcss';
-@import './theme.css';
+@import "tailwindcss";
+@import "./theme.css";
 
 .contenedor__h1{
   font-family: var(--heading-h1-font-family);
-  font-size: var(--heading-h1-font-size);
+  font-size:  var(--heading-h1-font-size);
   font-style: var(--heading-h1-font-style);
   font-weight: var(--heading-h1-font-weight);
   letter-spacing: var(--heading-h1-letter-spacing);
@@ -13,26 +12,10 @@
   text-align: center;
 }
 
-.interpretes{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 5rem;
-  padding: 2rem;
-  text-align: center;
-}
-.titulo2{
-
-text-align: center;
-
-}
-
 body{
-  background-color: rgb(206, 229, 229);
+  background-color: beige;
 }
 
-
-
-
-
-
-
+.titulo2{
+text-align: center;
+}
