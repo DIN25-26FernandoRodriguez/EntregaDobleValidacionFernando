@@ -1,5 +1,6 @@
 import Contenedor from "./features/Contenedor.jsx"
 import Interprete from "./pages/Interprete.jsx"
+import Peliculas from "./pages/Peliculas.jsx"
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
           <Interprete>
             
           </Interprete>
+
+          <Peliculas>
+            
+          </Peliculas>
+
+
 
           </div>
         </div>
