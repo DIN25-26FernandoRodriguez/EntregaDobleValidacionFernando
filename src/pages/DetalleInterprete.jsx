@@ -5,7 +5,7 @@ function DetalleInterprete() {
   const { id } = useParams();
   const index = parseInt(id);
 
-  //Buscar películas del intérprete (Cambiar comentario porque es de IA)
+
   const todosLosActores = peliculas.flatMap(p => p.actores);
   const interprete = todosLosActores[index]
 
@@ -14,9 +14,16 @@ function DetalleInterprete() {
 
   return (
     <div>
+
+        <button>
+          <a href="/interpretes" className="text-black-500 hover:underline mb-4 inline-bloc bg-[var(--colorNavBar)] p-2 rounded-2xl ">Volver a películas</a>
+        </button>
+
       <h1 className="text-4xl font-bold text-center mt-10 mb-6">Detalles del Intérprete</h1>
 
       <main className="w-full mx-auto px-4 text-center">
+
+        
 
         <img
           src={interprete.imagen}

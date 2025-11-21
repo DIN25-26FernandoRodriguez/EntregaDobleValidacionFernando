@@ -7,6 +7,11 @@ const todosLosActores = peliculas.flatMap(p => p.actores);
 
   return (
     <>
+
+<button>
+          <a href="/inicio" className="text-black-500 hover:underline mb-4 inline-bloc bg-[var(--colorNavBar)] p-2 rounded-2xl ">Volver al inicio</a>
+        </button>
+
       <div>
         <h1 className="text-4xl font-bold text-center mt-10 mb-6">Intérpretes Destacados</h1>
       </div>

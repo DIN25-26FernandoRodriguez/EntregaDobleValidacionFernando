@@ -15,7 +15,6 @@ function Card(props) {
                 <figure className="w-full rounded-lg bg-gray-100 overflow-hidden">
 
                     <img className="w-80 h-90 object-cover rounded-2xl " src={foto} alt={nombre} />
-                    <figcaption className="sr-only">{props.children}</figcaption>
 
                 </figure>
                 <div>

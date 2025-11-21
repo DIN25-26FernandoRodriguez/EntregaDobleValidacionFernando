@@ -8,6 +8,12 @@ function DetallePelicula() {
 
   return (
     <div>
+
+        <button>
+          <a href="/peliculas" className="text-black-500 hover:underline mb-4 inline-bloc bg-[var(--colorNavBar)] p-2 rounded-2xl ">Volver a películas</a>
+        </button>
+       
+
       <h1 className="text-4xl font-bold text-center mt-10 mb-6">Detalles de la Película</h1>
 
 
