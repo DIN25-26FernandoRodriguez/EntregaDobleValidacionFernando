@@ -1,7 +1,6 @@
 import { Routes } from "react-router-dom"
 import { Route } from "react-router-dom"
 import Navbar from "./components/Navbar.jsx"
-
 import Contenedor from "./components/Contenedor.jsx"
 import Interprete from "./pages/Interprete.jsx"
 import Pelicula from "./pages/Peliculas.jsx"

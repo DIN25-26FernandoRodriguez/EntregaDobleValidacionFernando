@@ -3,11 +3,12 @@ import peliculas from "../data/peliculas"
 
 function DetalleInterprete() {
   const { id } = useParams();
+  const index = parseInt(id);
 
   //Buscar películas del intérprete (Cambiar comentario porque es de IA)
  
   const todosLosActores = peliculas.flatMap(p => p.actores);
-  const interprete = todosLosActores[parseInt(id)]
+  const interprete = todosLosActores[index]
 
   const peliculasDelActor = peliculas.filter(p =>p.actores.includes(interprete));
 

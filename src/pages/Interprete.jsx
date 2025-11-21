@@ -2,6 +2,9 @@ import peliculas from "../data/peliculas"
 import Card from "../components/Card.jsx"
 
 function Interprete() {
+
+const todosLosActores = peliculas.flatMap(p => p.actores);
+
   return (
     <>
       <div>
@@ -9,8 +12,8 @@ function Interprete() {
       </div>
 
       <div className="w-full mx-auto px-4 flex flex-wrap gap-6 justify-center">
-      {peliculas.map((pelicula) => 
-        pelicula.actores.map((actor, index) =>
+      {
+        todosLosActores.map((actor, index) =>
           <Card
             key={index}
             nombre={actor.nombre}
@@ -18,7 +21,7 @@ function Interprete() {
             to={`/interpretes/${index}`} >
             {actor.biografia}
           </Card>
-        ))}
+        )}
         </div>
     </>
   )
