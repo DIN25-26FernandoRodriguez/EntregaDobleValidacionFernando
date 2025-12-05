@@ -6,18 +6,20 @@ import { useMemo } from "react";
 
 function Interprete() {
 
-  const todosLosActores = peliculas.flatMap((pelicula) =>
-    pelicula.actores.map((actor, idInterprete) => ({
-      ...actor,
-      idPelicula: pelicula.id, 
-      idInterprete: idInterprete, 
-      esNota10: pelicula.nota === 10, 
-    }))
-  );
+
 
   const [searchTerm, setSearchTerm] = useState(""); // Declaro el estádo que se va a guardar
 
   const filteredActores = useMemo(() => {
+
+    const todosLosActores = peliculas.flatMap((pelicula) =>
+      pelicula.actores.map((actor, idInterprete) => ({
+        ...actor,
+        idPelicula: pelicula.id,
+        idInterprete: idInterprete,
+        esNota10: pelicula.nota === 10,
+      }))
+    );
     if (!searchTerm) {
       return todosLosActores;
       // Si no hay término, devuelve la lista completa
@@ -46,16 +48,7 @@ function Interprete() {
       </div>
 
       <div className="w-full mx-auto px-4 flex flex-wrap gap-6 justify-center">
-        {/* {
-        todosLosActores.map((actor, index) =>
-          <Card
-            key={index}
-            nombre={actor.nombre}
-            foto={actor.imagen}
-            to={`/interpretes/${index}`} >
-            {actor.biografia}
-          </Card>
-        )} */}
+
         {filteredActores.length > 0 ? (
           filteredActores.map((actor, index) => (
             <Card
@@ -68,7 +61,7 @@ function Interprete() {
           ))
         ) : (
           // Mensaje si no hay resultados
-          <p className="col-span-full text-center text-gray-500 p-4"> No se encontraron películas con el término `{searchTerm}`. </p>
+          <p className="col-span-full text-center text-gray-500 p-4"> No se encontraron actores con el término `{searchTerm}`. </p>
         )}
       </div>
     </>
