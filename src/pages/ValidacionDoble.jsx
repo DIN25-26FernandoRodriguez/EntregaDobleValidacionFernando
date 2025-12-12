@@ -134,9 +134,9 @@ function ValidacionDoble() {
                         className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                         <option value="">Selecciona una opcion</option>
-                        <option value="rock">Trance</option>
-                        <option value="progressive">Rock</option>
-                        <option value="punk">Pop</option>
+                        <option value="trance">Trance</option>
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
                         <option value="trash">Trash</option>
                     </select>
                 </div>
