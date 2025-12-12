@@ -4,11 +4,12 @@ import Navbar from "./components/Navbar.jsx"
 import Contenedor from "./components/Contenedor.jsx"
 import Interprete from "./pages/Interprete.jsx"
 import Pelicula from "./pages/Peliculas.jsx"
+import Formulario from "./pages/Formulario.jsx"
 import Inicio from "./pages/Inicio";
 import Admin from "./pages/Admin";
 import DetallePelicula from "./pages/DetallePelicula.jsx"
 import DetalleInterprete from "./pages/DetalleInterprete.jsx"
-
+import ValidacionDoble from "./pages/ValidacionDoble.jsx"
 function App() {
   return (
     <>
@@ -23,6 +24,8 @@ function App() {
         <Route path="/peliculas" element={<Pelicula />} />
         <Route path="/peliculas/:id" element={<DetallePelicula />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/formularios" element={<Formulario/>} />
+        <Route path="/validaciondoble" element={<ValidacionDoble/>} />
         </Routes>
       </Contenedor>
 

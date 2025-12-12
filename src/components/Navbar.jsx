@@ -17,6 +17,8 @@ function Navbar() {
       <Link to="/peliculas" className="hover:underline">Películas</Link>
       <Link to="/interpretes" className="hover:underline">Intérpretes</Link>
       <Link to="/admin" className="hover:underline">Admin</Link>
+      <Link to="/formularios" className="hover:underline">Formulario</Link>
+      <Link to="/validaciondoble" className="hover:underline">Formulario Validación</Link>
     </nav>
 
     {/* Configuración para esconder el boton hamburguesa en pantallas medianas y grandes*/}
@@ -30,6 +32,8 @@ function Navbar() {
                 <NavLink to="/peliculas"  className="hover:underline" onClick={() => setOpen(false)}>Películas</NavLink>
                 <NavLink to="/interpretes"  className="hover:underline" onClick={() => setOpen(false)}>Intérpretes</NavLink>
                 <NavLink to="/admin"  className="hover:underline" onClick={() => setOpen(false)}>Admin</NavLink>
+                <NavLink to="/formularios"  className="hover:underline" onClick={() => setOpen(false)}>Formularios</NavLink>
+                <NavLink to="/validaciondoble"  className="hover:underline" onClick={() => setOpen(false)}>Formulario Validación</NavLink>
             </nav>
     </header>
   );
